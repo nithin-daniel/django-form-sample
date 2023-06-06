@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <title>Django Form</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-6 mx-auto p-4 m-5 border-light shadow-sm">
+<h3 class="pb-3"> Form </h3>
+<div class="form-style">
+<form method="post" action="">
+    {% csrf_token %}
+  <div class="form-group pb-3">   
+<!--      
+    <input type="text" placeholder="Enter your name" class="form-control" id="" aria-describedby="emailHelp">   
+  </div>
+  <div class="form-group pb-3">   
+    <input type="email" placeholder="Enter your email" class="form-control" id="">
+  </div>
+  <div class="form-group pb-3">   
+    <input type="text" placeholder="Enter your phone number" class="form-control" id="">
+  </div> -->
+    {{form.as_p}}
+   <div class="pb-2">
+  <button type="submit" class="btn btn-dark w-100 font-weight-bold mt-2">Submit</button>
+   </div>
+</form>
+</div>
+</div>
+</div>
+    
+</body>
+</html>
